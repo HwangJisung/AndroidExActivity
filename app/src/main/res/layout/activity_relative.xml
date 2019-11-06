@@ -12,9 +12,35 @@
         android:layout_height="wrap_content"
         android:textSize="30dp"
         android:text="URL : "
+        android:id="@+id/tv"
         />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"/>
+        android:ems="10"
+        android:layout_toRightOf="@id/tv"
+        android:id="@+id/et"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_below="@id/tv"
+        android:layout_alignRight="@id/et"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bottom"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_centerInParent="true"
+        />
 </RelativeLayout>
